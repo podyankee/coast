@@ -102,6 +102,7 @@
 	text-transform: uppercase
 	font-weight: 800
 	span
+		margin-top: 15px
 		padding-top: 15px
 		font-weight: 300
 		font-size: 16px
@@ -122,10 +123,12 @@
 	&::before
 		content: ''
 		position: absolute
-		+dem(11px, 13px)
-		background-image: url(../img/location.svg)
+		right: 0
 		left: 0
-		top: 0
+		content: url('../img/sprite.svg#location' param(--color white))
+		width: 11px
+		height: 13px
+		background-size: cover
 .header__map
 	position: absolute
 	right: 0
