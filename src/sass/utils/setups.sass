@@ -8,6 +8,8 @@ body
 	font-weight: $mainFontWeight
 	overflow-wrap: break-word
 	word-wrap: break-word
+	background-color: #171919
+	text-transform: uppercase
 a
 	text-decoration: none
 	display: inline-block
@@ -15,11 +17,11 @@ a
 .container
 	@include min-max(320px, 100%, 0)
 .wrap
-	@include min-max(320px, 1140px, 15px)
+	@include min-max(320px, 1920px, 15px)
 .icon-arrow-right, .icon-arrow-left
 	fill: $white-color
 	+dem(24px, 20px)
-.subtitle-left
+.headline-left
 	font-size: 22px
 	line-height: 32px
 	letter-spacing: 7.33333px
@@ -54,3 +56,69 @@ ul,li
 	+dem(24px)
 .icon-down-arrows
 	+dem(21px, 24px)
+.icon-surf
+	+dem(40px, 24px)
+.icon-water
+	+dem(19px, 24px)
+.icon-wind
+	+dem(26px, 24px)
+.title
+	line-height: 1.2
+	span
+		font-size: 200px
+		color: rgba($white-color, 0.02)
+		font-weight: 800
+		transform: translateX(-50px)
+		display: inline-block
+		position: relative
+	h3
+		margin: 0
+		color: $white-color
+		font-size: 80px
+		position: absolute
+		top: 0
+		right: -5px
+		&::after
+			content: ''
+			position: absolute
+			top: 0
+			right: 0
+			width: 80px
+			height: 1.3px
+			background-color: $accent-color
+.subtitle
+	line-height: 1.2
+	display: inline-block
+	text-align: right
+	&__head
+		font-weight: 800
+		font-size: 40px
+		span
+			font-weight: 300
+.btn
+	font-size: 40px
+	line-height: 36px
+	font-weight: 800
+	span
+		padding: 17px 57px 15px 17px
+		background-color: $accent-color
+		display: inline-block
+		margin-left: 19px
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			width: 20px
+			height: 1px
+			background-color: $white-color
+			top: 50%
+			left: -10px
+		&::after
+			content: ''
+			position: absolute
+			width: 25px
+			height: 21px
+			background-image: url(../img/sprite.svg#arrow-right)
+			top: 50%
+			right: 17px
+			transform: translateY(-50%)
