@@ -1,9 +1,11 @@
-.travel
+.holder
 	background: url(../img/travel-bg.png) bottom right no-repeat
+	&.sleep
+		background: url(../img/frangipani.png) bottom right no-repeat
 	.slider-arrow
 		top: 225px
 		opacity: 0.5
-.travel-slider
+.holder-slider
 	&__head
 		box-sizing: content-box
 		background-repeat: no-repeat
@@ -15,6 +17,7 @@
 		margin-top: -230px
 		background-repeat: no-repeat
 		background-position: right center
+		background-size: contain
 		.icon
 			margin-left: 24px
 	&__subtitle
@@ -44,7 +47,7 @@
 			font-weight: 800
 			padding-left: 40px
 			position: relative
-			span
+			.holder-pricing__span
 				font-size: 14px
 				line-height: 0
 				text-align: right
@@ -54,7 +57,7 @@
 				position: absolute
 				bottom: -8px
 				right: 0
-.travel-slider
+.holder-slider
 	&__info
 		&-item
 			min-height: 200px
