@@ -27,7 +27,7 @@ $(document).ready(function() {
 			focusOnSelect: true
 		});
 
-		$('.holder__slider').slick({
+		$('.holder__slider, .shop__slider').slick({
 			infinite: true,
 			fade: true,
 			prevArrow: '<svg class="icon icon-arrow-left slider-arrow slider-arrow__left"><use xlink: href = "assets/img/sprite.svg#arrow-left"></use></svg>',
@@ -79,5 +79,8 @@ let summ = $('.nights').val() * $('.summ').data('nights') + ($('.guests').val() 
 
 $('.summ').html('$' + summ);
 
+$('.surfboard-box__circle').on('click', function() {
+	$(this).toggleClass('active');
+});
 
 	});

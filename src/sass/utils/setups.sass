@@ -42,7 +42,6 @@ a
 	font-size: 22px
 	line-height: 32px
 	letter-spacing: 7.33333px
-	//color: $white-color
 	opacity: 0.5
 	padding-right: 103px
 	position: relative
@@ -51,7 +50,7 @@ a
 		content: ''
 		position: absolute
 		width: 80px
-		height: 1px
+		height: 2px
 		background-color: $white-color
 		right: 0
 		top: 50%
@@ -125,6 +124,7 @@ ul,li
 	&__head
 		font-weight: 800
 		font-size: 40px
+		line-height: 40px
 		span
 			font-weight: 100
 .btn
@@ -212,4 +212,5 @@ input[type=number]
 .star-list
 	li
 		display: inline-block
-		margin-left: -25px
+		& + li
+			margin-left: -25px

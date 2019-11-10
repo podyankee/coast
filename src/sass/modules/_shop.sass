@@ -1,2 +1,137 @@
-.surf
-	padding: 160px 0 210px
+.shop
+	background: url(../img/shop-bg.png) center right no-repeat
+	&__slider
+		padding-left: 132px
+		&-info
+			max-width: 480px
+			width: 100%
+			margin-right: 40px
+			padding-top: 150px
+		&-price
+			position: relative
+		&-inner
+			display: flex
+	.slider-arrow
+		opacity: 0.25
+.descr__head
+	&-shop
+		max-width: 400px
+		margin-bottom: 47px
+.shop
+	&__star-list
+		font-size: 0
+		li + li
+			margin-left: 24px
+	&__slider-price
+		font-size: 32px
+		font-weight: 800
+		line-height: 40px
+		margin-bottom: 64px
+		sup
+			font-size: 18px
+			padding-left: 2px
+.shop
+	&__slider-content
+		padding-left: 170px
+		display: flex
+		align-items: flex-end
+	&__extras
+		padding-left: 150px
+		&-inner
+			display: flex
+		&-title
+			font-size: 28px
+			line-height: 40px
+			margin-bottom: 25px
+			font-weight: 800
+		&-box
+			text-align: center
+			margin-right: 57px
+		&-img
+			min-height: 105px
+			display: flex
+			align-items: center
+			justify-content: center
+			margin-bottom: 35px
+		&-name
+			font-size: 18px
+			line-height: 22px
+			opacity: 0.5
+			letter-spacing: 8px
+			margin-bottom: 16px
+		&-price
+			font-size: 18px
+			font-weight: 800
+			line-height: 40px
+.surfboard-box__circle.active + .surfboard-box__content
+	display: block
+.surfboard
+	position: relative
+	&-box
+		position: absolute
+		&__circle
+			width: 20px
+			height: 20px
+			border-radius: 50%
+			position: relative
+			background-color: $white-color
+			cursor: pointer
+			&.active
+				.circle-row
+					transform: translate(-50%, -50%) rotate(0deg)
+		&__content
+			display: none
+			position: absolute
+			width: 359px
+			font-size: 24px
+			line-height: 24px
+			font-weight: 800
+			padding-left: 104px
+			top: -15px
+			left: 40px
+			&::before
+				content: ''
+				position: absolute
+				width: 80px
+				height: 2px
+				background-color: $white-color
+				opacity: 0.5
+				left: 0
+				top: 50%
+
+.surfboard__position--1
+	right: 40px
+	top: 215px
+.surfboard__position--2
+	left: -6px
+	top: 313px
+.surfboard__position--3
+	bottom: 70px
+	left: 52px
+	.surfboard-box__content
+		padding-left: 0
+		padding-right: 104px
+		top: -15px
+		left: -400px
+		&::before
+			content: ''
+			position: absolute
+			width: 80px
+			height: 2px
+			background-color: $white-color
+			opacity: 0.5
+			right: 0
+			left: auto
+			top: 50%
+
+
+.circle-row
+	position: absolute
+	background-color: $accent-color
+	width: 12px
+	height: 2px
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%) rotate(0deg)
+	& + .circle-row
+		transform: translate(-50%, -50%) rotate(90deg)
