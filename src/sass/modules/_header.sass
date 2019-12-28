@@ -124,11 +124,10 @@
 	padding-left: 19px
 	text-transform: capitalize
 	&::before
-		content: ''
 		position: absolute
 		right: 0
 		left: 0
-		content: url('../img/sprite.svg#location' param(--color white))
+		content: url('../img/location.svg')
 		width: 11px
 		height: 13px
 		background-size: cover
@@ -149,3 +148,23 @@
 @keyframes animdash
 	to
 		stroke-dashoffset: 0
+.menu-btn
+	width: 60px
+	height: 60px
+	justify-content: center
+	align-items: center
+	border-radius: 50%
+	border: 1px solid #fff
+	position: absolute
+	z-index: 20
+	right: 20px
+	top: 75px
+	background-color: rgba(255, 255, 255, .1)
+	display: none
+	&__inner
+		width: 40px
+	&__line
+		height: 5px
+		background-color: $accent-color
+		+ .menu-btn__line
+			margin-top: 5px
